@@ -4,6 +4,7 @@ using namespace std;
 #define int   long long int
 #define ll long long
 
+// Bipartite graph only for Directed and acyclic graph
 
 const int MOD = 1e9 + 7;
 const int mod = 1e9+7;
