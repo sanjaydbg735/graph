@@ -20,7 +20,7 @@ void InDegreeOfDirectedGraph(int NumberOfNodes){
         }
     }
 }
-vector<int> topologicalSortBFS(int NumberOfNodes){
+vector<int> topologicalSortBFS(int NumberOfNodes){  // kahn's Algorithm
 
     InDegreeOfDirectedGraph(NumberOfNodes); // calculating ingree
 
