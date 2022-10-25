@@ -42,7 +42,7 @@ public:
         size[parentV]+=size[parentU];
     }
     int Size(int node){
-        return size[node];
+        return size[find(node)];
     }
 
     bool sameSet(int u,int v){
