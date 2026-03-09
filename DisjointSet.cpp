@@ -32,15 +32,18 @@ public:
     }
 
     void join(int u,int v){
-        int parentU=find(u);
-        int parentV=find(v);
-
-        if(parentU==parentV)return;
-        if(size[u]>size[v])swap(u,v);
-
-        parent[parentU]=parentV;
-        size[parentV]+=size[parentU];
+        int parentU = find(u);
+        int parentV = find(v);
+    
+        if(parentU == parentV) return;
+    
+        if(size[parentU] > size[parentV])
+            swap(parentU, parentV);
+    
+        parent[parentU] = parentV;
+        size[parentV] += size[parentU];
     }
+
     int Size(int node){
         return size[find(node)];
     }
